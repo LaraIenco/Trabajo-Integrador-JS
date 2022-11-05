@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Integrador 2 Lara Eliana Ienco</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href= styles.css>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+    <script src="compra-tickets.js"></script>
+    
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+       <img class="logo-codo-a-codo" src="img/codoacodo.png">
+       <h4 class="titulonav">Conf Bs</h4>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <span class="navbar-text">
+              <a class="link1" href="#">La conferencia</a>
+              <a class="link2" href="#">Los oradores</a>
+              <a class="link2" href="#">El lugar y la fecha</a>
+              <a class="link2" href="#">Conviertete en orador</a>
+              <a class="link3" href="#">Comprar Tickets</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+<section class="cards">
+  <div class="cardEstudiante">
+    <h3>Estudiante</h3>
+    <h5>Tiene un descuento</h5>
+    <h5>80%</h5>
+    <h6>*presentar documentación</h6>
+  </div>
+  <div class="cardTrainee">
+    <h3>Trainee</h3>
+    <h5>Tiene un descuento</h5>
+    <h5>50%</h5>
+    <h6>*presentar documentación</h6>
+  </div>
+  <div class="cardJunior">
+    <h3>Junior</h3>
+    <h5>Tiene un descuento</h5>
+    <h5>15%</h5>
+    <h6>*presentar documentación</h6>
+  </div>
+</section>
+
+  <div class="text">
+  <h6>VENTA</h6>
+  <h1>VALOR DE TICKET $200</h1>
+</div>
+<form>
+  <div class="nombreyapellido">
+    <div class="form-group col-12 col-md-3">
+    <input 
+    type="text" 
+    class="form-control" 
+    placeholder="Nombre" 
+    id="nombre">
+  </div>
+  <div class= "form-group col-12 col-md-3">
+    <input 
+    type="text" 
+    class="form-control" 
+    id="apellido" 
+    placeholder="Apellido">
+</div>
+</div>
+ 
+<div class="email">
+<div class="form-group col-12 col-md-6">
+    <input 
+    type="email" 
+    class="form-control" 
+    placeholder="Correo" 
+    id="mail">
+</div>
+</div>
+<div class="cantidadycategoria">
+  <div class="form-group col-12 col-md-3">
+      <label for="inputCantidad" class="form-label">Cantidad</label>
+      <input 
+      type="number"
+      id="inputCantidad" 
+      class="form-control"
+      placeholder="Cantidad">
+  </div>
+    <div class="form-group col-12 col-md-3">
+      <label for="inputCategoria" class="form-label">Categoría</label>
+      <select id="inputCategoria" class="form-control">
+        <option selected>Estudiante</option>
+        <option>Trainee</option>
+        <option>Junior</option>
+      </select>
+    </div>
+  </div>
+    <div class="pagar">
+      <div class="alert alert-primary" role="alert" id="total">
+      Total a pagar: <p id="totalResumen"></p>
+      </div>
+    </div>
+    
+<div class="botones">
+  
+  <div class="form-group col-12 col-md-3">
+    <button 
+    type="reset" 
+    class="btn btn-codo">
+    Borrar</button>
+  </div>
+    <div class="form-group col-12 col-md-3">
+    <button 
+    type="button" 
+    class="btn btn-codo"
+    onclick= "calcularPrecio()">
+    
+    Resumen
+  </button>
+  </div>
+</div>
+
+</form>
+
+<footer>
+  <section class="footer">
+  <nav class="navbar navbar-expand-lg" style="background-color: #235578;">
+    <div class="container-fluid">
+      <div class="collapsefooter navbar-collapse" id="navbarTextFooter">
+        <span class="navbar-textFooter" >
+          <a class="footer" href="#">Preguntas frecuentes</a>
+          <a class="footer" href="#">Contactanos</a>
+          <a class="footer" href="#">Prensa</a>
+          <a class="footer" href="#">Conferencias</a>
+          <a class="footer" href="#">Términos y condiciones</a>
+          <a class="footer" href="#">Privacidad</a>
+          <a class="footer" href="#">Estudiantes</a>
+        </span>
+      </div>
+    </div>
+  </nav>
+</section>
+</footer>
+</html>
